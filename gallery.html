@@ -1302,139 +1302,119 @@
             <!-- Font Awesome -->
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 
-            <style>
-                /* Footer Styles */
-                .footer {
-                    background-color: #1a1a1a;
-                    color: #ccc;
-                    font-size: 14px;
-                }
+           <style>
+    /* Footer */
+    .footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+      font-size: 14px;
+      padding-top: 25px;
+      padding-bottom: 10px;
+    }
 
-                .footer h5 {
-                    color: #ffffff;
-                    font-weight: 600;
-                    margin-bottom: 15px;
-                    text-transform: uppercase;
-                    font-size: 16px;
-                }
+    .footer h5 {
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 16px;
+      border-bottom: 2px solid #520a82;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
 
-                .footer a {
-                    color: #ccc;
-                    text-decoration: none;
-                }
+    .footer a {
+      color: #ccc;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
 
-                .footer a:hover {
-                    color: #fff;
-                    text-decoration: underline;
-                }
+    .footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
 
-                .footer small {
-                    display: block;
-                    line-height: 1.6;
-                    color: #bbb;
-                }
+    .footer .fa {
+      color: #520a82;
+      margin-right: 8px;
+    }
 
-                .footer .fa {
-                    color: #460463;
-                    margin-right: 8px;
-                }
+    .footer ul {
+      padding-left: 0;
+      list-style: none;
+    }
 
-                .footer ul li {
-                    margin-bottom: 8px;
-                }
+    .footer ul li {
+      margin-bottom: 10px;
+    }
 
-                .footer img {
-                    max-height: 70px;
-                }
+    .footer-bottom {
+      border-top: 1px solid #444;
+      margin-top: 20px;
+      padding-top: 10px;
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+    }
 
-                .footer .border-top {
-                    border-color: #444 !important;
-                    margin-top: 20px;
-                    padding-top: 10px;
-                    color: #aaa;
-                }
+    @media (max-width: 576px) {
+      .footer, .main-menu ul {
+        text-align: center;
+        flex-direction: column;
+      }
+    }
+  </style>
+ 
+<!-- Footer Start -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 text-center">
+        <img src="assets/img/logo/logo.png" alt="Logo" class="img-fluid mb-2" style="max-height: 70px;"><br>
+        <small>Turning Moments Into Memories<br> Event Planning | Floral Decorations | Party Rental</small>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Address</h5>
+        <p><i class="fa fa-map-marker-alt"></i> Palai, Kilinochchi, Sri Lanka</p>
+        <p><i class="fa fa-phone-alt fa fa-envelope"></i> +94 3457946</p>
+        <p><i class="fa fa-envelope"></i> haMh4@gmail.com</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Services</h5>
+        <ul>
+          <li>Wedding Planning</li>
+          <li>Wedding Photography</li>
+          <li>Floral Decoration</li>
+          <li>Bride/Groom Dressing</li>
+          <li>Poruwa and Services</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
 
-                /* Responsive padding */
-                @media (max-width: 576px) {
-                    .footer {
-                        text-align: center;
-                    }
+    <div class="footer-bottom mt-4">
+      &copy; 2025 <strong>H4 AmsHa</strong>. All Rights Reserved. Designed by <a href="#">WEBbuilders.lk</a>
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
 
-                    .footer .row>div {
-                        margin-bottom: 20px;
-                    }
-                }
-            </style>
-        </head>
+<script>
+  // Hide preloader
+  window.addEventListener("load", function() {
+    document.getElementById("preloader-active").style.display = "none";
+  });
+</script>
 
-        <body>
-
-            <!-- Footer Start -->
-            <div class="container-fluid footer mt-4 pt-3 wow fadeIn" data-wow-delay="0.1s">
-                <div class="container py-3">
-                    <div class="row g-4">
-                        <!-- Logo & Description -->
-                        <div class="col-lg-3 col-md-6">
-                            <center>
-                                <img src="assets/img/logo/logo.png" alt="Logo" class="img-fluid me-2"><br>
-                            </center>
-                            <br>
-                            <small>
-                                Turning Moment Into Memories
-                                <br>
-                                Event Planing | Floral Decorations | Party Rental
-                            </small>
-                        </div>
-
-                        <!-- Address -->
-                        <div class="col-lg-3 col-md-6">
-                            <h5>Address</h5>
-                            <p class="mb-1"><i class="fa fa-map-marker-alt"></i> Palai, Kilinochchi, Srilanka</p>
-                            <p class="mb-1"><i class="fa fa-phone-alt"></i> +94 3457946</p>
-                            <p class="mb-2"><i class="fa fa-envelope"></i> haMh4@gmail.com</p>
-                        </div>
-
-                        <!-- Services -->
-                        <div class="col-lg-3 col-md-6">
-                            <h5>Services</h5>
-                            <ul class="list-unstyled small">
-                                <li>Wedding Planning</li>
-                                <li>Wedding Photography</li>
-                                <li>Floral Decoration</li>
-                                <li>Bride/ Groom Dressing</li>
-                                <li>Poruwa and Services</li>
-
-                            </ul>
-                        </div>
-
-                        <!-- Quick Links -->
-                        <div class="col-lg-3 col-md-6">
-                            <h5>Quick Links</h5>
-                            <ul class="list-unstyled small">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Guest Book</a></li>
-
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Bottom Text -->
-                        <div class="text-center pt-3 border-top border-secondary" style="font-size: 13px;">
-                            © 2025 H4 AmsHa. All Rights Reserved. Designed By WEBbuilders.lk
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Footer End -->
-
-        </body>
-
+</body>
 </html>
-
-
-
-
 
 
 
